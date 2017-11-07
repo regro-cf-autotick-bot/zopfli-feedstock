@@ -1,8 +1,8 @@
 {% set name = "zopfli" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.3" %}
 {% set bundle = "zip" %}
 {% set hash_type = "sha256" %}
-{% set hash = "54f1fe2580f7142cd3e76720916e3e343a3280c4605aa12387077ebc5b845cd3" %}
+{% set hash = "ecb69a56bb4a6b8e7f6aea25d058a9546243885aef9b232ddbbdcc35ab5fcd6e" %}
 {% set build = 0 %}
 
 package:
