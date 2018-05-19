@@ -1,9 +1,8 @@
 {% set name = "zopfli" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set bundle = "zip" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ecb69a56bb4a6b8e7f6aea25d058a9546243885aef9b232ddbbdcc35ab5fcd6e" %}
-{% set build = 0 %}
+{% set hash = "95cdbadb8732ef0881aa310079e324c22a800d59ddd44456a1cddb1d42744b62" %}
 
 package:
   name: {{ name|lower }}
@@ -11,17 +10,17 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - toolchain
 
   run:

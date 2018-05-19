@@ -14,14 +14,16 @@ Summary: Zopfli module for python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zopfli-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zopfli-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/zopfli-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zopfli-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zopfli-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zopfli-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/zopfli-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/zopfli-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/zopfli-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/zopfli-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/zopfli-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/zopfli-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zopfli/badges/version.svg)](https://anaconda.org/conda-forge/zopfli)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zopfli/badges/downloads.svg)](https://anaconda.org/conda-forge/zopfli)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-zopfli-green.svg)](https://anaconda.org/conda-forge/zopfli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/zopfli.svg)](https://anaconda.org/conda-forge/zopfli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/zopfli.svg)](https://anaconda.org/conda-forge/zopfli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/zopfli.svg)](https://anaconda.org/conda-forge/zopfli) |
 
 Installing zopfli
 =================
