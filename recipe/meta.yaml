@@ -1,5 +1,6 @@
 {% set name = "zopfli" %}
 {% set version = "0.1.4" %}
+{% set bundle = "zip" %}
 {% set hash_type = "sha256" %}
 {% set hash = "95cdbadb8732ef0881aa310079e324c22a800d59ddd44456a1cddb1d42744b62" %}
 
@@ -8,7 +9,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
