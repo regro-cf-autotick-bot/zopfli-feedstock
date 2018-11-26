@@ -1,8 +1,8 @@
 {% set name = "zopfli" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 {% set bundle = "zip" %}
 {% set hash_type = "sha256" %}
-{% set hash = "95cdbadb8732ef0881aa310079e324c22a800d59ddd44456a1cddb1d42744b62" %}
+{% set hash = "ed2293c11c2685bbd70bad0103285279406a77622e06de794d59c2180fecaa6a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1001
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
