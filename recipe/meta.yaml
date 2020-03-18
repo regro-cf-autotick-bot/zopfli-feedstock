@@ -1,7 +1,6 @@
 {% set name = "zopfli" %}
 {% set version = "0.1.7" %}
 {% set bundle = "zip" %}
-{% set hash_type = "sha256" %}
 {% set hash = "512892714f0e3dcc9a77222cb509ed519f41ce2b92467e47a4b406a23b48561a" %}
 
 package:
@@ -11,10 +10,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
