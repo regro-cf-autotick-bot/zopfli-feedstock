@@ -1,7 +1,7 @@
 {% set name = "zopfli" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 {% set bundle = "zip" %}
-{% set hash = "512892714f0e3dcc9a77222cb509ed519f41ce2b92467e47a4b406a23b48561a" %}
+{% set hash = "8b977dc07e3797907ab59e08096583bcd0b7e6c739849fbbeec09263f6356623" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -32,9 +32,9 @@ test:
 about:
   home: https://github.com/obp/zopfli
   license_file: COPYING
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
-  summary: 'Zopfli module for python'
+  summary: Zopfli module for python
   dev_url: https://github.com/obp/zopfli
 
 extra:
