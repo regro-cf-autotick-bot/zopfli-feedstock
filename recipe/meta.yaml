@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm
   run:
     - python
 
