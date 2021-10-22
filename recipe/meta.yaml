@@ -1,7 +1,7 @@
 {% set name = "zopfli" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set bundle = "zip" %}
-{% set hash = "8b977dc07e3797907ab59e08096583bcd0b7e6c739849fbbeec09263f6356623" %}
+{% set hash = "78de3cc08a8efaa8013d61528907d91ac4d6cc014ffd8a41cc10ee75e9e60d7b" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools_scm
   run:
     - python
 
