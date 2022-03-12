@@ -15,14 +15,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://travis-ci.com/conda-forge/zopfli-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/zopfli-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -313,5 +306,4 @@ Feedstock Maintainers
 =====================
 
 * [@jakirkham](https://github.com/jakirkham/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 
