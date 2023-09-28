@@ -1,7 +1,7 @@
 {% set name = "zopfli" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 {% set bundle = "zip" %}
-{% set hash = "2d49db7540d9991976af464ebc1b9ed12988c04d90691bcb51dc4a373a9e2afc" %}
+{% set hash = "dbc9841bedd736041eb5e6982cd92da93bee145745f5422f3795f6f258cdc6ef" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
