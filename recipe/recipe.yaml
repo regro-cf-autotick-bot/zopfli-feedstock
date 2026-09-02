@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  version: "0.4.3"
+
+package:
+  name: zopfli
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/z/zopfli/zopfli-${{ version }}.tar.gz
+  sha256: d3a50f91a13cea9bafe025de8fd87a005eb26de02a4f0c193127ddbf23ac8ebe
+
+build:
+  number: 0
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - ${{ stdlib("c") }}
+    - ${{ compiler("c") }}
+    - ${{ compiler("cxx") }}
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+  host:
+    - python
+    - pip
+    - setuptools
+    - setuptools_scm
+  run:
+    - python
+
+tests:
+  - python:
+      imports:
+        - zopfli
+      pip_check: true
+  - files:
+      source:
+        - README.rst
+        - tests/
+    requirements:
+      run:
+        - pytest
+    script:
+      - pytest
+
+about:
+  license_file: COPYING
+  license: Apache-2.0
+  summary: Zopfli module for python
+  homepage: https://github.com/obp/zopfli
+  repository: https://github.com/obp/zopfli
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - mgorny
